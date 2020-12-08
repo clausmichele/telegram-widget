@@ -118,7 +118,7 @@
       widgetElId = 'telegram-post-' + widgetId.replace(/[^a-z0-9_]/ig, '-') + (comment ? '-comment' + comment : '');
       src = widgetsOrigin + '/' + widgetId + '?embed=1';
       allowedAttrs = ['comment', 'userpic', 'single?', 'color', 'dark', 'dark_color'];
-      defWidth = widgetEl.getAttribute('data-width') || '100%';
+      defWidth = widgetEl.getAttribute('data-width') || '200%';
       defHeight = '';
       styles.minWidth = '640px';
     }
