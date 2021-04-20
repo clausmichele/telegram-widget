@@ -118,9 +118,9 @@
       widgetElId = 'telegram-post-' + widgetId.replace(/[^a-z0-9_]/ig, '-') + (comment ? '-comment' + comment : '');
       src = widgetsOrigin + '/' + widgetId + '?embed=1';
       allowedAttrs = ['comment', 'userpic', 'single?', 'color', 'dark', 'dark_color'];
-      defWidth = widgetEl.getAttribute('data-width') || '200%';
-      defHeight = '';
-      styles.minWidth = '640px';
+      defWidth = widgetEl.getAttribute('data-width') || '100%';
+      defHeight = widgetEl.getAttribute('data-height') || '';
+      styles.minWidth = '320px';
     }
     else if (widgetId = widgetEl.getAttribute('data-telegram-discussion')) {
       widgetsOrigin = getWidgetsOrigin('https://t.me', 'https://post.tg.dev');
